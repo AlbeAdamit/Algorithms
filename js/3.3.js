@@ -1,6 +1,14 @@
-let arr = [1, 2, 34, 45, 56];
-let newArr = [0, 1];
-let i = 0;
-
-newArr[i++] === arr[i++];
+/*
+var arr = [1, 2, 3, 4, "r", "t"];
+var newArr = [].concat(arr);
 console.log(newArr);
+*/
+/*
+var arr = [1, 2, 3, 4, "r", "t"];
+var newArr = arr.slice();
+console.log(newArr);
+*/
+
+var arr = [1, "Apple", 42, "BeCode", "MaxNef"];
+var newArr = arr.push("test");
+console.log(arr);

@@ -1,13 +1,13 @@
-const readlineSync = require('readline-sync');
+const readlineSync = require('readline-sync')
 
-let min, max, current;
-min = readlineSync.question("Indicate your minimum number :");
-max = readlineSync.question("Indicate your maximum number :");
-current = readlineSync.question("Indicate your current number :");
+let current = readlineSync.question("Entrez un chiffre: ")
+let min = readlineSync.question("Entrez un chiffre plus petit: ")
+let max = readlineSync.question("Entrez un chiffre plus grand: ")
 
-if (min > max) {
-    console.log("It appears that you don't know how tu use a computer, try again later.");
+if (min > max){
+    console.log("I'm sorry but it appears that you don't know how to use a computer. Check on Google")
 }
-    else if ((max > current) && (current > min)) {
-    console.log(current);
+
+else if (min < current < max){
+    console.log(current)
 }
