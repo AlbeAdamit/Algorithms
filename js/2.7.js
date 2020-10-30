@@ -16,6 +16,4 @@ while (n != 0) {
     addition = addition + Number.parseInt(readlineSync.question("Enter a new number : "));
     n = n-1;
 }
-
-
 console.log(addition); */
