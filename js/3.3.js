@@ -10,5 +10,5 @@ console.log(newArr);
 */
 
 var arr = [1, "Apple", 42, "BeCode", "MaxNef"];
-var newArr = arr.push("test");
-console.log(arr);
+var newArr = arr.push();
+console.log(newArr);
