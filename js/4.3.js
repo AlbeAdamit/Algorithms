@@ -1,4 +1,4 @@
-let min = 0;
+/* let min = 0;
 let max = 10000000;
 
 function rand10(min, max) {
@@ -12,5 +12,22 @@ function multiRand(n) {
         console.log(rand10(min, max));
     }
 }
-let n = 5;
-multiRand(n);
+n.push(multiRand(n));
+console.log(n) */
+
+let myarray = [];
+function rand10() {
+    return Math.floor(Math.random() * 10);
+}
+
+function multiRand(n) {
+    let number
+    while (n-- != 0) {
+        number =  myarray.push(rand10());
+    }
+    return number;
+}
+
+let n = 10;
+myarray.push(multiRand(n));
+console.log(myarray);

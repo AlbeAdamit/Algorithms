@@ -1,5 +1,5 @@
 let min = 0;
-let max = 10;
+let max = 10000;
 
 function rand10(min, max) {
     min = Math.ceil(min);
